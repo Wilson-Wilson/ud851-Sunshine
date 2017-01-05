@@ -55,6 +55,7 @@ public class MainActivity extends AppCompatActivity {
      * This method will get the user's preferred location for weather, and then tell some
      * background method to get the weather data in the background.
      */
+
     private void loadWeatherData() {
         String location = SunshinePreferences.getPreferredWeatherLocation(this);
         new FetchWeatherTask().execute(location);
